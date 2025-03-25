@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Submit</button>
+    </form>
+    
+    <div id="responseMessage" class="mt-3"></div>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+    let responseMessage = document.getElementById("responseMessage");
+
+    if (name === "" || email === "" || message === "") {
+        responseMessage.innerHTML = "<div class='alert alert-danger'>All fields are required.</div>";
+        return;
+    }
+
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        responseMessage.innerHTML = "<div class='alert alert-warning'>Please enter a valid email address.</div>";
+        return;
+    }
+
+    responseMessage.innerHTML = "<div class='alert alert-success'>Form submitted successfully!</div>";
+
+    // Simulate sending data (replace with actual server request if needed)
+    console.log({ name, email, message });
+
+    // Clear form fields after submission
+    document.getElementById("contactForm").reset();
+});
+</script>
+
+</body>
+</html>

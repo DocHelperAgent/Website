@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DocHelper Agent</title>
+    <meta name="description" content="DocHelper Agent">
+    <link rel="icon" href="img/DocHelperAgent.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/MainImage4.png);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <img src="img/Logo.gif" alt="logo">
+                    </div>
+                    <div class="col-6 align-self-center text-right">
+                        <a href="https://dochelpai.netlify.app/pages/DocHelper%20AI%20Whitepaper.pdf" class="text-white lead">White Paper</a>
+                    </div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-black font-weight-bold my-5">
+                A New Way<br>
+                To Start Documents
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-black my-4">
+                DocHelper AI streamlines document creation by customizing forms based on user input.
+                <br> It learns, collaborates, and seeks expert help when needed for accuracy and efficiency.
+            </p>
+            <a href="https://dochelpchat.netlify.app/" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Demo Now</a>
+        </div>
+    </div>
+    <!-- Chat Bot -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://dochelper-agent-doc-super.up.railway.app/webhook/e12017b3-8d14-49ff-8e4c-531d6816a05d/chat'
+        });
+    </script>
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5">Smartest choice for your documents</h2>
+        <div class="row">
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img src="img/DataProtection.gif" alt="Data-Protection" class="mx-auto">
+                <h4>Data Protection</h4>
+                <p>Uses AES-256 encryption for data storage and transmission. AES-256 encryption is a robust security standard used to protect data during storage and transmission. It employs a 256-bit encryption key, making it highly resistant to brute-force attacks. This encryption method is widely adopted for securing sensitive information, ensuring that data remains safe even if intercepted. By implementing AES-256, systems can maintain strong confidentiality, integrity, and security for user information.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img src="img/Privacy-First.gif" alt="Privacy-First Design" class="mx-auto">
+                <h4>Privacy-First Design</h4>
+                <p>DocHelper AI empowers users with full control over their data, allowing them to access, update, and delete information as needed. It also offers advanced anonymization options to protect sensitive details, ensuring privacy and compliance with data protection standards like GDPR and CCPA. These features provide users with both security and peace of mind.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img src="img/Scalability.gif" alt="Scalability" class="mx-auto">
+                <h4>Scalability</h4>
+                <p>Designed to operate on a robust cloud infrastructure, ensuring exceptional scalability and performance. By utilizing distributed computing resources, it can efficiently manage high traffic volumes and support millions of concurrent users without compromising speed or reliability. This architecture minimizes latency, enabling fast response times and a smooth user experience, even during peak usage periods.</p>
+            </div>
+        </div>
+    </div>
+    <!-- feature (skew background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+        <div class="container my-5">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                    <h2 class="font-weight-bold">Machine-Learning</h2>
+                    <p class="my-4">
+                        Improve document quality and user experience through adaptive AI. Continuously enhances document quality and user experience by adapting to user behavior and improving its understanding over time.
+                        <br> Strengthens document security and verification by leveraging blockchain technology for tamper-proof records and improved data integrity.
+                    </p>
+                    <a href="https://dochelperagentapp.netlify.app/" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
+                    <img src="img/feature-Motion.gif" alt="Machine-Learning" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feature (green background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-last">
+        <div class="container">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
+                    <h2 class="font-weight-bold">AI Integration</h2>
+                    <p class="my-4">
+                        DocHelper AI leverages advanced intelligence, seamless automation, and effective human collaboration to deliver an intuitive document creation experience. By understanding user intent, learning from interactions, and adapting to individual preferences, it ensures that users achieve their goals with maximum efficiency and accuracy.
+                        <br>This powerful combination not only simplifies complex tasks but also enhances productivity, making document management smarter and more effective.
+
+
+
+
+
+
+
+
+                    </p>
+                    <a href="https://dochelperagentapp.netlify.app/" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
+                    <img src="img/Empower.gif" alt="AI Integration" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- price table -->
+    <div class="container my-5 py-2" id="price-table">
+        <h2 class="text-center font-weight-bold d-block mb-3">Check our pricing</h2>
+        <div class="row">
+            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
+                <h4 class="my-4">FREE</h4>
+                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">0</span> / MO.</p>
+                <ul class="list-unstyled">
+                    <li>5 documents</li>
+                    <li>Basic templates</li>
+                    <li>Email support</li>
+                
+                </ul>
+                <a href="https://dochelperagentapp.netlify.app/" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
+                <h4 class="my-4">Pro</h4>
+                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">9.99</span> / MO.</p>
+                <ul class="list-unstyled">
+                    <li>Unlimited Documents</li>
+                    <li>Premium templates</li>
+                    <li>Priority support</li>
+                    <li>Advanced AI features</li>
+                </ul>
+                <a href="https://dochelperagentapp.netlify.app/" class="btn my-4 font-weight-bold atlas-cta cta-green">Free Limited</a>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
+                <h4 class="my-4">TEAM</h4>
+                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">29.99</span> / MO.</p>
+                <ul class="list-unstyled">
+                    <li>Everything in Pro</li>
+                    <li>Team collaboration</li>
+                    <li>Admin dashboard</li>
+                    <li>Custom templates</li>
+                </ul>
+                <a href="https://dochelperagentapp.netlify.app/" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Free Very Limited</a>
+            </div>
+        </div>
+    </div>
+    <!-- client -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/adobe-icon.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/Google-icon.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/Supabase-icon.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/netlify-logo.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/github-icon.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/Virtuals-icon.jpg" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/contact-bk.jpg);">
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Contact Us</h2>
+                    <p class="my-4">
+                        Office Open: Mon Fri 9:00AM - 5:00PM
+                        <br> Office Closed: Sat Sun
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Email : support@dochelper.org</li>
+                        <li>Phone : ‪(346) 220-6805‬</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="1999f9bf-b63c-48a2-9679-82c81b0e5cc8">
+
+                        <!-- Form Inputs. Each input must have a name="" attribute -->
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" name="name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Email">Your Email</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" name="message" rows="3" required></textarea>
+
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <!-- Custom Confirmation / Success Page -->
+                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                        
+                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2025 DocHelper AI
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="https://www.facebook.com/people/Dochelper-Ai/61573971372378/" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://x.com/DocHelperAgent" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://app.virtuals.io/prototypes/0x0322ABD497E7F093a88f23b278b2A64FB6D58F22" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://t.me/DocHelperAgentBot" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+        });
+    </script>
+</body>
+
+</html>
